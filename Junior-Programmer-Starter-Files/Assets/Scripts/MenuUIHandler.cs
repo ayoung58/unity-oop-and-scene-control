@@ -31,6 +31,7 @@ public class MenuUIHandler : MonoBehaviour
     }
 
     public void Exit() {
+        MainManager.Instance.SaveColor(); 
         if (Application.isEditor) {
             EditorApplication.ExitPlaymode();
         } else {
